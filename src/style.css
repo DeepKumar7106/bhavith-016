@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Cossette+Titre:wght@400;700&family=Doto:wght@100..900&family=Gasoek+One&family=Lavishly+Yours&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&family=Sixtyfour&family=Sora:wght@100..800&family=Stack+Sans+Headline:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+  background: radial-gradient(#3c007c, #0e0725);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+/* h1 {
+  margin-top: 10vh;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  justify-self: start;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: clamp(4rem, 4vw, 12rem);
+  font-family: "Gasoek One", sans-serif;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+  position: absolute; /* Keeps it from pushing the section down when appearing */ 
+
+#imgSection {
+  margin: auto;
+  width: 50vh;
+  height: max-content;
+  position: relative;
+}
+ 
+@keyframes wobble {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(-5deg); }
+  50% { transform: translateY(0) rotate(5deg); }
+  75% { transform: translateY(-2px) rotate(-3deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+h1 {
+  margin-top: 10vh;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
+  justify-self: start;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 4vw, 12rem);
+  font-family: "Gasoek One", sans-serif;
+  /* opacity: 0; */
+  transition: all 0.8s ease-in-out;
+  position: absolute;  
+  width: 100%;
+  top: 10%;  
+  pointer-events: none; 
+}
+
+
+
+.birthday-text span {
+  display: inline-block;
+  /* opacity: 0; */
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  cursor: default;
+  pointer-events: auto;  
+}
+ 
+#root:hover ~ .birthday-text span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+ 
+.birthday-text span:hover {
+  animation: wobble 0.4s ease-in-out;
+  color: #ff7360; 
+  text-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+}
+
+/* 4. Keep your staggered delays from before */
+.birthday-text span:nth-child(1) { transition-delay: 0.1s; }
+.birthday-text span:nth-child(2) { transition-delay: 0.15s; }
+.birthday-text span:nth-child(3) { transition-delay: 0.2s; }
+.birthday-text span:nth-child(4) { transition-delay: 0.25s; }
+.birthday-text span:nth-child(5) { transition-delay: 0.3s; }
+.birthday-text span:nth-child(6) { transition-delay: 0.35s; } 
+.birthday-text span:nth-child(7) { transition-delay: 0.4s; }
+.birthday-text span:nth-child(8) { transition-delay: 0.45s; }
+.birthday-text span:nth-child(9) { transition-delay: 0.5s; }
+.birthday-text span:nth-child(10) { transition-delay: 0.55s; }
+.birthday-text span:nth-child(11) { transition-delay: 0.6s; }
+.birthday-text span:nth-child(12) { transition-delay: 0.65s; }
+.birthday-text span:nth-child(13) { transition-delay: 0.7s; }
+.birthday-text span:nth-child(14) { transition-delay: 0.75s; }
+
+.imgs {
+  width: 15vw;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 1rem;
+  background: radial-gradient(tranparent , black);
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px blue;
+}
+
+.item1 {
+  z-index: 100;
+  /* opacity: 0.1; */
+}
+
+.item1:hover {
+  scale: 1.2;
+  transform: translate(40%, -40%);
+}
+
+.bg {
+  width: 10vw;
+  pointer-events: none; 
+  
+  box-shadow: 2px 2px 5px 3px #3c007c;  
+  filter: brightness(60%);
+}
+#imgSection:hover .item2 {
+  transform: translate(calc(-50% - 2vw), calc(-50% - 15vw)) scale(0.8);
+}
+
+#imgSection:hover .item3 {
+  
+  transform: translate(calc(-50% + 20vw), calc(-50% - 18vw)) scale(1.1);
+}
+
+#imgSection:hover .item4 {
+  transform: translate(calc(-50% + 30vw), calc(-50% - 5vw)) scale(0.9);
+}
+
+#imgSection:hover .item5 {
+  transform: translate(calc(-50% + 25vw), calc(-50% + 4vw)) scale(0.5);
+}
+
+#imgSection:hover .item7 {
+  transform: translate(calc(-50% + 25vw), calc(-50% + 18vw)) scale(1.2);
+}
+
+#imgSection:hover .item8 {
+  transform: translate(-40%, calc(-50% + 16vw)) scale(0.8);
+}
+
+#imgSection:hover .item9 {
+  transform: translate(calc(-50% - 18vw), calc(-50% + 14vw)) scale(1.2);
+}
+
+#imgSection:hover .item10 {
+  transform: translate(calc(-50% - 10vw), calc(-50% - 4vw)) scale(0.5);
+}
+
+#imgSection:hover .item11 {
+  transform: translate(calc(-50% - 20vw), calc(-50% - 12vw));
+}
+
+
+
+
+@media (max-width:746px) {
+  #imgSection {
+    width: 90%;
+  }
+
+  .imgs {
+    width: 120px;
+  }
+  .bg {
+    width: 20vw;  
+  }
+  #imgSection:hover .item2 {
+    transform: translate(calc(-10% - 5vw), calc(-50% - 35vw)) scale(0.6);
+  }
+
+  #imgSection:hover .item3 {
+    transform: translate(calc(-10% + 20vw), calc(-50% - 28vw)) scale(0.7);
+  }
+
+  #imgSection:hover .item4 {
+    transform: translate(calc(-10% + 45vw), calc(-50% - 15vw)) scale(0.6);
+  }
+
+  #imgSection:hover .item5 {
+    transform: translate(calc(-10% + 36vw), calc(-50% + 5vw)) scale(0.4);
+  }
+
+  #imgSection:hover .item7 {
+    transform: translate(calc(-10% + 38vw), calc(-50% + 35vw)) scale(0.8);
+  }
+
+  #imgSection:hover .item8 {
+    transform: translate(20%, calc(-50% + 30vw)) scale(0.6);
+  }
+
+  #imgSection:hover .item9 {
+    transform: translate(calc(-10% - 20vw), calc(-50% + 22vw)) scale(0.7);
+  }
+
+  #imgSection:hover .item10 {
+    transform: translate(calc(-10% - 15vw), calc(-50% - 0vw)) scale(0.4);
+  }
+
+  #imgSection:hover .item11 {
+    transform: translate(calc(-10% - 22vw), calc(-50% - 20vw)) scale(0.6);
+  }
+}
